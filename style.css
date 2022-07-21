@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(./Logotipos/knit-g3a16e8b1b_1920.jpg);
+    background-size: cover;
+}
+
+.navegacion{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.elementos{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.logotipo{
+    width: 8rem;
+    height: 6rem;
+}
+
+.list-item{
+    display: flex;
+}
+
+.item{
+    list-style: none;
+    padding: 0rem 1.5rem;
+    font-family: 'Italianno', cursive;
+    font-size: 2rem;
+    color:antiquewhite;
+}
+
+.item:hover{
+    background-color: rgba(210, 162, 255, 0.66);
+    color: white;
+    border-radius: 2rem;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.section-1{
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 80vh;
+    /* background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(./Logotipos/winter-g3ca9ff5ef_1920.jpg); */
+
+}
+
+.section-1 h1{
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+.section-1 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: antiquewhite;
+}
+
+.button {
+    margin: 0;
+    margin-top: 3rem;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #dd9eff;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+/* Segunda seccion */
