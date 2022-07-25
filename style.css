@@ -1,52 +1,66 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.header{
+.header {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(./Logotipos/knit-g3a16e8b1b_1920.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(./Logotipos/knit-g3a16e8b1b_1920.jpg);
     background-size: cover;
 }
 
-.navegacion{  
+.navegacion {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.elementos{
+.elementos {
     margin-bottom: 2rem;
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
-.logotipo{
+
+.logotipo {
     width: 8rem;
     height: 6rem;
 }
 
-.list-item{
+.list-item {
     display: flex;
 }
 
-.item{
+.menu-hamburguesa {
+    display: none;
+}
+
+.icono-menu-hamburguesa {
+    width: 2rem;
+    height: 2rem;
+    display: none;
+}
+
+.item {
     list-style: none;
     padding: 0rem 1.5rem;
     font-family: 'Italianno', cursive;
     font-size: 2rem;
-    color:antiquewhite;
-}
-
-.item:hover{
-    background-color: rgba(210, 162, 255, 0.66);
-    color: white;
+    color: antiquewhite;
     border-radius: 2rem;
-    cursor:pointer;
-    transition: 0.3s;
 }
 
-.section-1{
+.item:hover {
+    background-color: antiquewhite;
+    color: black;
+
+    cursor: pointer;
+    transition: 1s;
+}
+
+.section-1 {
     background-size: cover;
     width: 100%;
     text-align: center;
@@ -60,14 +74,14 @@
 
 }
 
-.section-1 h1{
+.section-1 h1 {
     margin-bottom: 2rem;
     font-size: 4rem;
     color: antiquewhite;
     border: 1px solid antiquewhite;
 }
 
-.section-1 p{
+.section-1 p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     color: antiquewhite;
@@ -79,13 +93,13 @@
     background: transparent;
     padding: 0;
     border: none;
-  }
-  
-  /* button styling */
-  .button {
+}
+
+/* button styling */
+.button {
     --border-right: 6px;
-    --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: #dd9eff;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: antiquewhite;
     --fs-size: 2em;
     letter-spacing: 3px;
     text-decoration: none;
@@ -95,9 +109,10 @@
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
-  }
-  /* this is the text, when you hover on button */
-  .hover-text {
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
     position: absolute;
     box-sizing: border-box;
     content: attr(data-text);
@@ -108,10 +123,423 @@
     overflow: hidden;
     transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color);
-  }
-  /* hover */
-  .button:hover .hover-text {
+}
+
+/* hover */
+.button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
-  }
+}
+
 /* Segunda seccion */
+
+.contenedor-segunda-seccion{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+
+.img-segunda-seccion{
+    width: 30rem;
+    height: 25rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+.texto-segunda-seccion{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-segunda-seccion h2{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.texto-segunda-seccion p{
+    margin-bottom: 1.5rem;
+    width: 30rem;
+}
+
+button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+button.learn-more {
+ width: 12rem;
+ height: auto;
+}
+
+button.learn-more .circle-btn {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background-color: rgb(212, 183, 146);
+ border-radius: 1.625rem;
+}
+
+button.learn-more .circle-btn .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #0000;
+}
+
+button.learn-more .circle-btn .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+button.learn-more .circle-btn .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+ 
+}
+
+button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: #282936;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+button:hover .circle-btn {
+ width: 100%;
+ background-color:  rgb(212, 183, 146);
+}
+
+button:hover .circle-btn .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+ color: black;
+}
+
+button:hover .button-text {
+ color: #fff;
+}
+
+
+/* Tercera seccion */
+
+.contenedor-tercera-seccion{
+    height: 70vh;
+    padding: 2rem 4rem;
+    background-image: url('./Logotipos/fashion-portrait-of-two-elegant-women-best-friends-posing-indoor-on-grey-wall-wearing-winter-fluffy-coat-black-casual-hat-fashionable-clothes-sisters-walking.jpg');
+    background-size: cover;
+}
+
+
+.texto-tercera-seccion{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
+.texto-tercera-seccion h2{
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+.texto-tercera-seccion p{
+    margin-bottom: 2rem;
+    width: 30rem;
+}
+
+button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+button.learn-more {
+ width: 12rem;
+ height: auto;
+}
+
+button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background-color: #282936;
+ border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #0000;
+}
+
+button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+ 
+}
+
+button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: #282936;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+button:hover .circle {
+ width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+ color: black;
+}
+
+button:hover .button-text {
+ color: #fff;
+}
+
+/* cuarta seccion */
+
+.cuarta-seccion{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-cuarta-seccion{
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+.texto-cuarta-seccion h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+
+.img-cuarta-seccion{
+    width: 3rem;
+    height: 3rem;
+}
+
+.iconos-cuarta-seccion{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.icono-1,
+.icono-2,
+.icono-3{
+    margin: 0rem 2rem;
+}
+
+.img-cuarta-seccion{
+    margin-bottom: 0.5rem;
+}
+
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+ border: none;
+ background: none;
+ margin-top: 4rem;
+}
+
+.cta span {
+ padding-bottom: 7px;
+ letter-spacing: 4px;
+ font-size: 10px;
+ padding-right: 15px;
+ text-transform: uppercase;
+}
+
+.cta svg {
+ transform: translateX(-8px);
+ transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+ transform: translateX(0);
+}
+
+.cta:active svg {
+ transform: scale(0.9);
+}
+
+.hover-underline-animation {
+ position: relative;
+ color: black;
+ padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+ content: "";
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 1.5px;
+ bottom: 0;
+ left: 0;
+ background-color: #000000;
+ transform-origin: bottom right;
+ transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+ transform: scaleX(1);
+ transform-origin: bottom left;
+}
+
+/* quinta seccion */
+
+.quinta-seccion{
+    height: 40vh;
+    /* background-color: #282936; */
+    background-image: linear-gradient(rgba(2, 35, 32, 0.3), rgba(0,0,0,0.9)), url('./Logotipos/vishal-banik-V6T99SnUCyA-unsplash.jpg');
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telefono-quinta-seccion{
+    color:antiquewhite;
+    margin-bottom: 1.5rem;
+}
+
+.telefono-quinta-seccion h4{
+    font-size: 1.5rem;
+}
+
+.email-quinta-seccion{
+    color: antiquewhite;
+    margin-bottom: 1.5rem;
+}
+
+.email-quinta-seccion h4{
+    font-size: 1.5rem;
+}
+
+.logo-quinta-seccion{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0rem 0.5rem;
+}
+   
+.derechos{
+    text-align: center;
+}   
+
+@media screen and (max-width: 480px) {
+
+    .header{
+        height: 100vh;
+    }
+    .section-1 {
+        width: 100%;
+        padding: 0rem 1rem;
+        height: 28rem;
+
+    }
+
+    .section-1 h1{
+        font-size: 3rem;
+    }
+
+    .elementos {
+        margin: 1rem 0rem 0rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;  
+        width: 100%;
+    }
+
+    .list-item{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    
+}
