@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
 .header {
@@ -18,7 +18,7 @@
 
 }
 
-.logo-primera-seccion{
+.logo-primera-seccion {
     width: 30rem;
     height: 28rem;
     padding: 0;
@@ -130,13 +130,13 @@
 
 /* Segunda seccion */
 
-.contenedor-segunda-seccion{
+.contenedor-segunda-seccion {
     display: flex;
     justify-content: space-between;
     padding: 2rem 4rem;
 }
 
-.img-segunda-seccion{
+.img-segunda-seccion {
     width: 30rem;
     height: 25rem;
     border-radius: 2rem;
@@ -144,23 +144,23 @@
 }
 
 
-.texto-segunda-seccion{
+.texto-segunda-seccion {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.texto-segunda-seccion h2{
+.texto-segunda-seccion h2 {
     margin-bottom: 1.5rem;
     font-size: 3.5rem;
     color: rgb(111, 36, 146);
     font-family: 'Italianno', cursive;
 }
 
-.texto-segunda-seccion p{
+.texto-segunda-seccion p {
     margin-bottom: 1.5rem;
     width: 30rem;
     font-size: 1rem;
@@ -168,101 +168,101 @@
 }
 
 button {
- position: relative;
- display: inline-block;
- cursor: pointer;
- outline: none;
- border: 0;
- vertical-align: middle;
- text-decoration: none;
- background: transparent;
- padding: 0;
- font-size: inherit;
- font-family: inherit;
- color: rgb(210, 112, 255);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    color: rgb(210, 112, 255);
 }
 
 button.learn-more {
- width: 12rem;
- height: auto;
+    width: 12rem;
+    height: auto;
 }
 
 button.learn-more .circle-btn {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: relative;
- display: block;
- margin: 0;
- width: 3rem;
- height: 3rem;
- background-color: rgb(231, 185, 252);
- border-radius: 1.625rem;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(231, 185, 252);
+    border-radius: 1.625rem;
 }
 
 button.learn-more .circle-btn .icon {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: absolute;
- top: 0;
- bottom: 0;
- margin: auto;
- background: #0000;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #0000;
 }
 
 button.learn-more .circle-btn .icon.arrow {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- left: 0.625rem;
- width: 1.125rem;
- height: 0.125rem;
- background: none;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
 }
 
 button.learn-more .circle-btn .icon.arrow::before {
- position: absolute;
- content: "";
- top: -0.29rem;
- right: 0.0625rem;
- width: 0.625rem;
- height: 0.625rem;
- border-top: 0.125rem solid #fff;
- border-right: 0.125rem solid #fff;
- transform: rotate(45deg);
- 
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+
 }
 
 button.learn-more .button-text {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- padding: 0.75rem 0;
- margin: 0 0 0 1.85rem;
- color: rgb(210, 112, 255);
- font-weight: 700;
- line-height: 1.6;
- text-align: center;
- text-transform: uppercase;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: rgb(210, 112, 255);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 button:hover .circle-btn {
- width: 100%;
- background-color:  rgb(231, 185, 252);
+    width: 100%;
+    background-color: rgb(231, 185, 252);
 }
 
 button:hover .circle-btn .icon.arrow {
- background: #fff;
- transform: translate(1rem, 0);
- color: rgb(210, 112, 255);
+    background: #fff;
+    transform: translate(1rem, 0);
+    color: rgb(210, 112, 255);
 }
 
 button:hover .button-text {
- color: rgb(210, 112, 255);
+    color: rgb(210, 112, 255);
 }
 
 
 /* Tercera seccion */
 
-.contenedor-tercera-seccion{
+.contenedor-tercera-seccion {
     height: 70vh;
     padding: 2rem 4rem;
     background-image: url('./Logotipos/fashion-portrait-of-two-elegant-women-best-friends-posing-indoor-on-grey-wall-wearing-winter-fluffy-coat-black-casual-hat-fashionable-clothes-sisters-walking.jpg');
@@ -270,119 +270,119 @@ button:hover .button-text {
 }
 
 
-.texto-tercera-seccion{
+.texto-tercera-seccion {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-top: 7rem;
 }
 
-.texto-tercera-seccion h2{
+.texto-tercera-seccion h2 {
     margin-bottom: 2.5rem;
     font-size: 4rem;
     color: rgb(81, 81, 81);
     font-family: 'Italianno', cursive;
 }
 
-.texto-tercera-seccion p{
+.texto-tercera-seccion p {
     margin-bottom: 2rem;
     width: 30rem;
     color: #7e7e7e;
 }
 
 button {
- position: relative;
- display: inline-block;
- cursor: pointer;
- outline: none;
- border: 0;
- vertical-align: middle;
- text-decoration: none;
- background: transparent;
- padding: 0;
- font-size: inherit;
- font-family: inherit;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
 }
 
 button.learn-more {
- width: 12rem;
- height: auto;
+    width: 12rem;
+    height: auto;
 }
 
 button.learn-more .circle {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: relative;
- display: block;
- margin: 0;
- width: 3rem;
- height: 3rem;
- background-color: #282936;
- border-radius: 1.625rem;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: #282936;
+    border-radius: 1.625rem;
 }
 
 button.learn-more .circle .icon {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: absolute;
- top: 0;
- bottom: 0;
- margin: auto;
- background: #0000;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #0000;
 }
 
 button.learn-more .circle .icon.arrow {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- left: 0.625rem;
- width: 1.125rem;
- height: 0.125rem;
- background: none;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
 }
 
 button.learn-more .circle .icon.arrow::before {
- position: absolute;
- content: "";
- top: -0.29rem;
- right: 0.0625rem;
- width: 0.625rem;
- height: 0.625rem;
- border-top: 0.125rem solid #fff;
- border-right: 0.125rem solid #fff;
- transform: rotate(45deg);
- 
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+
 }
 
 button.learn-more .button-text {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- padding: 0.75rem 0;
- margin: 0 0 0 1.85rem;
- color: #282936;
- font-weight: 700;
- line-height: 1.6;
- text-align: center;
- text-transform: uppercase;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 button:hover .circle {
- width: 100%;
+    width: 100%;
 }
 
 button:hover .circle .icon.arrow {
- background: #fff;
- transform: translate(1rem, 0);
- color: black;
+    background: #fff;
+    transform: translate(1rem, 0);
+    color: black;
 }
 
 button:hover .button-text {
- color: #fff;
+    color: #fff;
 }
 
 /* cuarta seccion */
 
-.cuarta-seccion{
+.cuarta-seccion {
     background-image: linear-gradient(rgba(255, 255, 255, 0.742), rgba(202, 181, 207, 0.605)), url('./Logotipos/winter-snowflake-illustration-on-blue-background.jpg');
     background-size: cover;
     height: 60vh;
@@ -391,24 +391,24 @@ button:hover .button-text {
     align-items: center;
 }
 
-.contenedor-cuarta-seccion{
+.contenedor-cuarta-seccion {
     padding: 2rem 3rem;
     text-align: center;
 }
 
-.texto-cuarta-seccion h2{
+.texto-cuarta-seccion h2 {
     margin-bottom: 1rem;
     font-size: 4rem;
     font-family: 'Italianno', cursive;
 }
 
 
-.img-cuarta-seccion{
+.img-cuarta-seccion {
     width: 3rem;
     height: 3rem;
 }
 
-.iconos-cuarta-seccion{
+.iconos-cuarta-seccion {
     display: flex;
     width: 100%;
     align-items: center;
@@ -418,77 +418,77 @@ button:hover .button-text {
 
 .icono-1,
 .icono-2,
-.icono-3{
+.icono-3 {
     margin: 0rem 2rem;
 }
 
-.img-cuarta-seccion{
+.img-cuarta-seccion {
     margin-bottom: 0.5rem;
 }
 
-.iconos-cuarta-seccion h4{
+.iconos-cuarta-seccion h4 {
     font-family: 'Italianno', cursive;
     font-size: 1.5rem;
 }
 
 /* From uiverse.io by @alexmaracinaru */
 .cta {
- border: none;
- background: none;
- margin-top: 4rem;
+    border: none;
+    background: none;
+    margin-top: 4rem;
 }
 
 .cta span {
- padding-bottom: 7px;
- letter-spacing: 4px;
- font-size: 10px;
- padding-right: 15px;
- text-transform: uppercase;
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 10px;
+    padding-right: 15px;
+    text-transform: uppercase;
 }
 
 .cta svg {
- transform: translateX(-8px);
- transition: all 0.3s ease;
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
 }
 
 .cta:hover svg {
- transform: translateX(0);
+    transform: translateX(0);
 }
 
 .cta:active svg {
- transform: scale(0.9);
+    transform: scale(0.9);
 }
 
 .hover-underline-animation {
- position: relative;
- color: rgb(186, 47, 198);
- padding-bottom: 20px;
+    position: relative;
+    color: rgb(186, 47, 198);
+    padding-bottom: 20px;
 }
 
 .hover-underline-animation:after {
- content: "";
- position: absolute;
- width: 100%;
- transform: scaleX(0);
- height: 1.5px;
- bottom: 0;
- left: 0;
- background-color: #000000;
- transform-origin: bottom right;
- transition: transform 0.25s ease-out;
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
 .cta:hover .hover-underline-animation:after {
- transform: scaleX(1);
- transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* quinta seccion */
 
-.quinta-seccion{
+.quinta-seccion {
     height: 40vh;
     /* background-color: #282936; */
-    background-image: linear-gradient(rgba(2, 35, 32, 0.3), rgba(0,0,0,0.9)), url('./Logotipos/vishal-banik-V6T99SnUCyA-unsplash.jpg');
+    background-image: linear-gradient(rgba(2, 35, 32, 0.3), rgba(0, 0, 0, 0.9)), url('./Logotipos/vishal-banik-V6T99SnUCyA-unsplash.jpg');
     background-size: cover;
     text-align: center;
     display: flex;
@@ -496,54 +496,53 @@ button:hover .button-text {
     align-items: center;
 }
 
-.telefono-quinta-seccion{
-    color:antiquewhite;
-    margin-bottom: 1rem;
-}
-
-.telefono-quinta-seccion h4{
-    font-size: 1.5rem;
-    font-size: 2rem;
-    font-family: 'Italianno', cursive;
-}
-
-.email-quinta-seccion{
+.telefono-quinta-seccion {
     color: antiquewhite;
     margin-bottom: 1rem;
-    
-    
 }
 
-.email-quinta-seccion h4{
+.telefono-quinta-seccion h4 {
     font-size: 1.5rem;
     font-size: 2rem;
     font-family: 'Italianno', cursive;
 }
 
-.logo-quinta-seccion{
+.email-quinta-seccion {
+    color: antiquewhite;
+    margin-bottom: 1rem;
+
+
+}
+
+.email-quinta-seccion h4 {
+    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Italianno', cursive;
+}
+
+.logo-quinta-seccion {
     width: 1.5rem;
     height: 1.5rem;
     margin: 0rem 0.5rem;
 }
-   
-.derechos{
+
+.derechos {
     text-align: center;
-}   
+}
 
 @media screen and (max-width: 480px) {
 
-    .header{
+    .header {
         height: 100vh;
     }
+
     .section-1 {
         width: 100%;
-        padding: 0rem 1rem;
+        /* padding: 0rem 1rem; */
         height: 28rem;
+        margin: 0;
+        padding: 0;
 
-    }
-
-    .section-1 h1{
-        font-size: 3rem;
     }
 
     .elementos {
@@ -551,14 +550,107 @@ button:hover .button-text {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;  
+        text-align: center;
         width: 100%;
     }
 
-    .list-item{
+    .list-item {
         width: 100%;
         flex-direction: column;
     }
 
-    
+    .logo-primera-seccion {
+        width: 12rem;
+        height: 10rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-1 p {
+        font-size: 2rem;
+    }
+
+    .contenedor-segunda-seccion{
+        flex-direction: column;
+        padding: 0;
+        background-image: url('./Logotipos/fondo-flor-mobile.jpg');
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .imagen-segunda-seccion{
+        margin: auto;
+        border-radius: none;
+        padding: 1rem;
+    } 
+
+    .img-segunda-seccion{
+        width: 100%;
+        height: 20rem;
+    }
+
+    .texto-segunda-seccion p{
+        padding: 0rem 2rem;
+    }
+
+    .learn-more{
+        margin-bottom: 1rem;
+    }
+
+.tercer-seccion{
+    height: 100vh;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+    .contenedor-tercera-seccion{
+        background-image: url('./Logotipos/fondo-mobile.jpg');
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .learn-more{
+        margin-left: 4rem;
+    }
+
+    .texto-tercera-seccion p{
+        width: 100%;
+    }
+
+    .cuarta-seccion{
+        height: 100vh;
+    }
+
+    .iconos-cuarta-seccion{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .icono-1,
+    .icono-2,
+    .icono-3{
+        margin: 1rem 0rem;
+    }
+
+    .texto-cuarta-seccion h2{
+        margin-top: 2rem;
+    }
+
+    .quinta-seccion{
+        background-image: none;
+        background-color: #282936;
+    }
+
+    .derechos{
+        background-color: #282936;
+        color: antiquewhite;
+    }
 }
