@@ -6,7 +6,6 @@
 }
 
 .header {
-    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(./Logotipos/snowflake-macro-photo-of-real-snow-crystal-beautiful-winter-background-seasonal-nature-and-the-wea.jpg);
     background-size: cover;
 }
@@ -486,14 +485,17 @@ button:hover .button-text {
 /* quinta seccion */
 
 .quinta-seccion {
-    height: 40vh;
+    height: 60vh;
     /* background-color: #282936; */
     background-image: linear-gradient(rgba(2, 35, 32, 0.3), rgba(0, 0, 0, 0.9)), url('./Logotipos/vishal-banik-V6T99SnUCyA-unsplash.jpg');
     background-size: cover;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+}
+
+.contenedor-quinta-seccion{
+    margin-top: 2rem;
+    margin: 0;
 }
 
 .telefono-quinta-seccion {
@@ -532,9 +534,6 @@ button:hover .button-text {
 
 @media screen and (max-width: 480px) {
 
-    .header {
-        height: 100vh;
-    }
 
     .section-1 {
         width: 100%;
@@ -570,42 +569,42 @@ button:hover .button-text {
         font-size: 2rem;
     }
 
-    .contenedor-segunda-seccion{
+    .contenedor-segunda-seccion {
         flex-direction: column;
         padding: 0;
-        background-image: url('./Logotipos/fondo-flor-mobile.jpg');
+        background-image: linear-gradient(rgba(255, 255, 255, 0.508),rgba(255, 190, 190, 0.137)), url('./Logotipos/fondo-flor-mobile.jpg');
         background-size: cover;
         height: 100vh;
     }
 
-    .imagen-segunda-seccion{
+    .imagen-segunda-seccion {
         margin: auto;
         border-radius: none;
         padding: 1rem;
-    } 
+    }
 
-    .img-segunda-seccion{
+    .img-segunda-seccion {
         width: 100%;
-        height: 20rem;
+        height: 17rem;
     }
 
-    .texto-segunda-seccion p{
-        padding: 0rem 2rem;
+    .texto-segunda-seccion p {
+        padding: 0rem 3rem;
     }
 
-    .learn-more{
-        margin-bottom: 1rem;
+    .learn-more {
+        margin-bottom: 5rem;
     }
 
-.tercer-seccion{
-    height: 100vh;
-    display: flex;
+    .tercer-seccion {
+        height: 100vh;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-}
+    }
 
-    .contenedor-tercera-seccion{
+    .contenedor-tercera-seccion {
         background-image: url('./Logotipos/fondo-mobile.jpg');
         background-size: cover;
         height: 100vh;
@@ -617,40 +616,107 @@ button:hover .button-text {
         align-items: center;
     }
 
-    .learn-more{
+    /* .learn-more {
         margin-left: 4rem;
-    }
+    } */
 
-    .texto-tercera-seccion p{
+    .texto-tercera-seccion p {
         width: 100%;
     }
 
-    .cuarta-seccion{
+    .cuarta-seccion {
         height: 100vh;
     }
 
-    .iconos-cuarta-seccion{
+    .iconos-cuarta-seccion {
         flex-direction: column;
         margin-bottom: 2rem;
     }
 
     .icono-1,
     .icono-2,
-    .icono-3{
+    .icono-3 {
         margin: 1rem 0rem;
     }
 
-    .texto-cuarta-seccion h2{
+    .texto-cuarta-seccion h2 {
         margin-top: 2rem;
     }
 
-    .quinta-seccion{
+    .quinta-seccion {
         background-image: none;
         background-color: #282936;
     }
 
-    .derechos{
+    .derechos {
         background-color: #282936;
         color: antiquewhite;
     }
+}
+
+@media screen and (max-width:360px) {
+
+
+
+.segunda-seccion{
+    height: 100%;
+}
+
+    .texto-segunda-seccion p {
+        padding: 0rem 5rem;
+        margin-bottom: 3rem;
+    }
+
+    /* .learn-more{
+        margin-right: 8rem;
+    } */
+
+    .imagen-segunda-seccion{
+        margin: 0;
+    }
+
+  .texto-tercera-seccion h2{
+font-size: 2rem;
+    } 
+
+.texto-segunda-seccion.learn-more{
+        margin: 0rem;
+
+    }
+
+    .learn-more{
+    }
+
+    .texto-tercera-seccion{
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .contenedor-tercera-seccion{
+        justify-content: center;
+        align-items: center;
+    }
+
+
+.contenedor-cuarta-seccion{
+    padding: 0rem 1rem;
+}
+
+    .texto-cuarta-seccion h2{
+        font-size: 2rem;
+    }
+
+    .cuarta-seccion{
+        height: 100%;
+    }
+
+    .iconos-cuarta-seccion{
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    .cta{
+        margin-top: 1.5rem;
+    }
+
 }
