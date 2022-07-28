@@ -43,7 +43,10 @@ body{
     color: white;
 }
 
-
+.card-1 a{
+    text-decoration: none;
+    color: white;
+}
 
 /* From uiverse.io by @alexruix */
 .card-1{
