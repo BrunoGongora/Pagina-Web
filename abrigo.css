@@ -69,7 +69,7 @@ body{
 
 .imagen-producto{
     height: 35rem;
-    width: 25rem;
+    width: 23rem;
 }
 
 .informacion-producto{
@@ -181,5 +181,3 @@ body{
 .informacion-producto a{
     text-decoration: none;
 }
-
-
